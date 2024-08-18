@@ -58,7 +58,7 @@ class KNN:
         self.cuisine = self.df[:, 0]
         self.course = self.df[:, 1]
         self.diet = self.df[:, 2]
-        self.prep_time = [int(i) for i in self.df[:, 3]]
+        self.prep_time = [float(i) for i in self.df[:, 3]]
         self.ingredients = self.df[:, 4]
 
     def encode(self):
